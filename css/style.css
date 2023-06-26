@@ -65,6 +65,7 @@
 :root {
   --grey33: #333333;
   --grey99: #999999;
+  --grey66: #666666;
   --greyad: #adadad;
   --greydc: #dcdcdc;
   --white: #ffffff;
@@ -459,3 +460,86 @@ img {
 }
 
 /*<===ABOUT END===> */
+
+/*<===HOW START===> */
+
+.how__title {
+  margin-bottom: 60px;
+}
+
+.how__pogination-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+.how__pogination-item:not(:last-child) {
+  margin-right: 85px;
+}
+
+.how__pogination-link {
+  color: var(--grey33);
+  font-size: 18px;
+}
+.how__pogination-link--active {
+  color: var(--orangeE1670E);
+}
+
+.how__card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.how__card-info {
+  flex: 0 0 758px;
+}
+
+.how__card-title {
+  color: var(--grey33);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+
+.how__card-description {
+  color: var(--grey33);
+  font-size: 16px;
+  line-height: 35px;
+  margin-bottom: 50px;
+}
+
+.how__card-btn {
+  padding: 19px 41px;
+  font-size: 16px;
+}
+
+.how__card-btn--more {
+  margin-right: 32px;
+}
+
+.how__card-btn--ok {
+  border: 1px solid var(--grey33);
+  color: var(--grey33);
+  background-color: transparent;
+}
+.how__card-btn--ok:focus,
+.how__card-btn--ok:hover {
+  background-color: var(--grey66);
+  color: var(--white);
+}
+
+.how__card-btn--ok:active {
+  background-color: #000;
+  color: var(--white);
+}
+
+.how__card-img-block {
+  flex: 0 0 870px;
+}
+
+.how__card-img {
+  max-width: 870px;
+}
+
+/*<===HOW END===> */
