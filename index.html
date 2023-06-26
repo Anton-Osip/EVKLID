@@ -7,5 +7,68 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="index.html" class="header__logo">
+          <img src="./img/Logo.png" alt="Евклид - проектные системы" />
+        </a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link header__link--active">О нас</a>
+            </li>
+            <li class="header__item"><a href="#" class="header__link">Проекты</a></li>
+            <li class="header__item"><a href="#" class="header__link">Этапы</a></li>
+            <li class="header__item"><a href="#" class="header__link">Отзывы</a></li>
+            <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__search-block">
+          <input type="text" class="header__search" placeholder="Что будем искать?" />
+          <button class="header__icon-search">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="7.56126"
+                height="1.89031"
+                transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)"
+              />
+              <path
+                d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
+              />
+            </svg>
+          </button>
+          <div class="header__icon-close"></div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__img-block"><img src="./img/hero1.jpg" alt="Картинка" /></div>
+          <div class="hero__info">
+            <h1 class="hero__title">Проектные решения любой сложности</h1>
+            <p class="hero__description">
+              Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день
+              остаются уделом проектантов
+            </p>
+            <button class="btn hero__btn">Заказать расчёт</button>
+            <ul class="hero__pagination-list">
+              <li class="hero__pagination-item">
+                <a href="#" class="hero__pagination-link hero__pagination-link--active"></a>
+              </li>
+              <li class="hero__pagination-item"><a href="#" class="hero__pagination-link"></a></li>
+              <li class="hero__pagination-item"><a href="#" class="hero__pagination-link"></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

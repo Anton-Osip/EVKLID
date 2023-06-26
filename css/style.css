@@ -1,44 +1,82 @@
 /* montserrat-regular - latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'),
-    url('../fonts/montserrat-v25-latin-regular.woff') format('woff');
+  src: url('../fonts/montserrat-v25-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/montserrat-v25-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url('../fonts/montserrat-v25-latin-regular.woff') format('woff'),
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+      url('../fonts/montserrat-v25-latin-regular.ttf') format('truetype'),
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url('../fonts/montserrat-v25-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
 /* montserrat-600 - latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/montserrat-v25-latin-600.woff2') format('woff2'),
-    url('../fonts/montserrat-v25-latin-600.woff') format('woff');
+  src: url('../fonts/montserrat-v25-latin-600.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/montserrat-v25-latin-600.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/montserrat-v25-latin-600.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url('../fonts/montserrat-v25-latin-600.woff') format('woff'),
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+      url('../fonts/montserrat-v25-latin-600.ttf') format('truetype'),
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url('../fonts/montserrat-v25-latin-600.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
 /* montserrat-700 - latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/montserrat-v25-latin-700.woff2') format('woff2'),
-    url('../fonts/montserrat-v25-latin-700.woff') format('woff');
+  src: url('../fonts/montserrat-v25-latin-700.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/montserrat-v25-latin-700.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/montserrat-v25-latin-700.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url('../fonts/montserrat-v25-latin-700.woff') format('woff'),
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+      url('../fonts/montserrat-v25-latin-700.ttf') format('truetype'),
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url('../fonts/montserrat-v25-latin-700.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
 /* montserrat-800 - latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 800;
-  src: url('../fonts/montserrat-v25-latin-800.woff2') format('woff2'),
-    url('../fonts/montserrat-v25-latin-800.woff') format('woff');
+  src: url('../fonts/montserrat-v25-latin-800.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/montserrat-v25-latin-800.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/montserrat-v25-latin-800.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url('../fonts/montserrat-v25-latin-800.woff') format('woff'),
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+      url('../fonts/montserrat-v25-latin-800.ttf') format('truetype'),
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url('../fonts/montserrat-v25-latin-800.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+:root {
+  --grey33: #333333;
+  --grey99: #999999;
+  --greyad: #adadad;
+  --greydc: #dcdcdc;
+  --white: #ffffff;
+
+  --orangef90: #ff9900;
+  --orangeE1670E: #e1670e;
 }
 * {
   box-sizing: border-box;
 }
-html {
-  font-family: sans-serif;
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 a {
   text-decoration: none;
@@ -47,7 +85,274 @@ img {
   max-width: 100%;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.btn {
+  padding: 25px 44px;
+  cursor: pointer;
+  background: var(--orangef90);
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 700;
+  border: 0px;
+  transition: background 0.3s ease;
+}
+.btn:focus,
+.btn:hover {
+  background: rgba(255, 153, 0, 0.7);
+}
+.btn:active {
+  background: var(--orangeE1670E);
+}
+
+/*<===HEADER START===> */
+
+.header {
+  padding: 14px 0;
+  box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.1);
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  width: 224px;
+  height: 72px;
+}
+
+.header__nav {
+  margin-left: auto;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+}
+
+.header__item {
+  margin-right: 83px;
+}
+
+.header__link {
+  padding: 5px 0;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: var(--grey33);
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.header__link:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--orangef90);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  opacity: 0;
+}
+
+.header__link:hover.header__link:after {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.header__link:focus {
+  border: 2px solid var(--orangef90);
+}
+
+.header__link--active,
+.header__link:active {
+  color: var(--orangeE1670E);
+}
+.header__link:focus.header__link:after,
+.header__link--active.header__link:after,
+.header__link:active.header__link:after {
+  transform: translateX(0%);
+  background-color: var(--orangeE1670E);
+  opacity: 1;
+}
+
+.header__search-block {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__search {
+  display: none;
+}
+
+.header__icon-search {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__icon-search svg rect {
+  fill: var(--grey33);
+  transition: fill 0.3s ease;
+}
+
+.header__icon-search svg path {
+  stroke: var(--grey33);
+  stroke-width: 2px;
+  transition: stroke 0.3s ease;
+}
+
+.header__icon-close {
+  display: none;
+  cursor: pointer;
+}
+.header__search-block--active .header__icon-search,
+.header__search-block:active .header__icon-search {
+  margin-right: 20px;
+}
+.header__search-block--active .header__icon-search svg rect,
+.header__search-block:active .header__icon-search svg rect,
+.header__search-block:hover .header__icon-search svg rect {
+  fill: var(--orangef90);
+}
+.header__search-block--active .header__icon-search svg path,
+.header__search-block:active .header__icon-search svg path,
+.header__search-block:hover .header__icon-search svg path {
+  stroke: var(--orangef90);
+}
+
+.header__icon-search:focus {
+  outline: 2px solid var(--orangef90);
+}
+.header__search-block--active,
+.header__search-block:active {
+  min-height: 60px;
+  max-width: 539px;
+  width: 100%;
+  padding: 16px 16px 16px 32px;
+  display: flex;
+  align-items: center;
+}
+.header__search-block--active .header__icon-close,
+.header__search-block:active .header__icon-close {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  border: 2px solid var(--grey99);
+  position: relative;
+}
+.header__search-block--active .header__icon-close::after,
+.header__search-block--active .header__icon-close::before,
+.header__search-block:active .header__icon-close:after,
+.header__search-block:active .header__icon-close::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: var(--grey99);
+  top: calc(50% - 1px);
+  left: calc(50% - 8px);
+}
+.header__search-block--active .header__icon-close::after,
+.header__search-block:active .header__icon-close:after {
+  transform: rotate(45deg);
+}
+.header__search-block--active .header__icon-close::before,
+.header__search-block:active .header__icon-close::before {
+  transform: rotate(-45deg);
+}
+.header__search-block--active .header__search,
+.header__search-block:active .header__search {
+  max-width: 395px;
+  width: 100%;
+  display: block;
+  border: 0px;
+  border-bottom: 1px solid var(--greydc);
+  margin-right: 14px;
+  padding-bottom: 10px;
+  color: var(--greyad);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/*<===HEADER END===> */
+
+/*<===HERO START===> */
+
+.hero__container {
+  width: 100%;
+  max-height: 620px;
+  height: 100%;
+  position: relative;
+}
+
+.hero__img-block {
+  width: 100%;
+  height: 100%;
+}
+
+.hero__info {
+  position: absolute;
+  top: 107px;
+  left: 95px;
+  right: 15px;
+  bottom: 30;
+}
+
+.hero__title {
+  color: var(--white);
+  font-size: 70px;
+  font-weight: 800;
+  max-width: 837px;
+  line-height: 80px;
+  margin-bottom: 32px;
+}
+
+.hero__description {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 700;
+  max-width: 790px;
+  word-spacing: 9px;
+  margin-bottom: 95px;
+}
+
+.hero__btn {
+  margin-bottom: 55px;
+}
+
+.hero__pagination-list {
+  margin: 0 auto;
+  transform: translateX(-40px);
+  width: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__pagination-item {
+  flex: 0 0 15px;
+}
+
+.hero__pagination-link {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: var(--white);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+.hero__pagination-link--active {
+  opacity: 1;
 }
