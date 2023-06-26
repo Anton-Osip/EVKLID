@@ -68,6 +68,7 @@
   --greyad: #adadad;
   --greydc: #dcdcdc;
   --white: #ffffff;
+  --greyca: #cacaca;
 
   --orangef90: #ff9900;
   --orangeE1670E: #e1670e;
@@ -83,6 +84,9 @@ a {
 }
 img {
   max-width: 100%;
+}
+.section {
+  padding-top: 107px;
 }
 .container {
   max-width: 1800px;
@@ -105,6 +109,10 @@ img {
 }
 .btn:active {
   background: var(--orangeE1670E);
+}
+.title {
+  color: var(--grey33);
+  font-size: 48px;
 }
 
 /*<===HEADER START===> */
@@ -298,7 +306,6 @@ img {
 
 .hero__img-block {
   width: 100%;
-  height: 100%;
 }
 
 .hero__info {
@@ -356,3 +363,99 @@ img {
 .hero__pagination-link--active {
   opacity: 1;
 }
+
+/*<===HERO END===> */
+
+/*<===ABOUT START===> */
+
+.about__title {
+  margin-bottom: 25px;
+}
+
+.about__description {
+  color: var(--grey33);
+  font-size: 16px;
+  line-height: 38px;
+  max-width: 1235px;
+  margin-bottom: 44px;
+}
+
+.about__cards {
+  display: grid;
+  grid-template-rows: 295px 295px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px;
+}
+
+.about__img-card {
+  grid-row: 1/3;
+  position: relative;
+}
+
+.about__img-card-img {
+  width: 100%;
+  height: 100%;
+}
+
+.about__img-card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__img-card-description {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  max-width: 454px;
+}
+
+.about__btn {
+  padding: 19px 40px;
+  background-color: transparent;
+  border: 3px solid var(--orangef90);
+  font-size: 16px;
+}
+
+.about__card {
+  padding: 75px 120px 65px 55px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--greyca);
+}
+
+.about__card-img-block {
+  flex: 1 1 198px;
+  margin-right: 50px;
+}
+
+.about__card-img {
+  width: 100%;
+}
+
+.about__card-info {
+  flex: 1 1 450px;
+}
+
+.about__card-title {
+  font-size: 24px;
+  font-weight: 700;
+  columns: var(--grey33);
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.about__card-description {
+  font-size: 16px;
+  line-height: 45px;
+  columns: var(--grey33);
+}
+
+/*<===ABOUT END===> */
