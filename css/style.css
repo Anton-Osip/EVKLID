@@ -67,6 +67,7 @@
   --grey99: #999999;
   --grey66: #666666;
   --greyad: #adadad;
+  --greyec: #ececec;
   --greydc: #dcdcdc;
   --white: #ffffff;
   --greyca: #cacaca;
@@ -543,3 +544,94 @@ img {
 }
 
 /*<===HOW END===> */
+
+/*<===FAQ START===> */
+
+.faq__container {
+  padding-bottom: 100px;
+}
+
+.faq__title {
+  margin-bottom: 32px;
+}
+
+.faq__item {
+  border-bottom: 1px solid var(--greyca);
+  border-top: 1px solid var(--greyca);
+}
+
+.faq__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.faq__header-title {
+  color: var(--grey33);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  transition: color 0.3s ease;
+}
+
+.faq__header-btn {
+  width: 50px;
+  height: 50px;
+  border: 0px;
+  background-color: var(--greyec);
+  border-radius: 100%;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.faq__header-btn:after,
+.faq__header-btn::before {
+  content: '';
+  width: 24px;
+  height: 2px;
+  background-color: var(--grey66);
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 12px);
+  transition: transform 0.3s ease;
+}
+.faq__header-btn:after {
+  transform: rotate(90deg);
+}
+
+.faq__footer {
+  display: none;
+}
+
+.faq__item:hover,
+.faq__item:focus {
+  border-bottom: 1px solid var(--orangef90);
+  border-top: 1px solid var(--orangef90);
+}
+.faq__item:hover .faq__header-title,
+.faq__item:focus .faq__header-title {
+  color: var(--orangef90);
+}
+.faq__item:hover .faq__header-btn,
+.faq__item:focus .faq__header-btn {
+  background-color: var(--orangef90);
+}
+
+.faq__item:hover .faq__header-btn:after,
+.faq__item:hover .faq__header-btn::before,
+.faq__item:focus .faq__header-btn:after,
+.faq__item:focus .faq__header-btn::before {
+  background-color: var(--white);
+}
+
+.faq__item--active .faq__header-btn:after,
+.faq__item:active .faq__header-btn:after {
+  transform: rotate(135deg);
+}
+.faq__item--active .faq__header-btn::before,
+.faq__item:active .faq__header-btn::before {
+  transform: rotate(225deg);
+}
+
+/*<===FAQ END===> */
