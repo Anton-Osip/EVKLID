@@ -10,6 +10,11 @@
   <body>
     <header class="header">
       <div class="container header__container">
+        <button class="header__burger">
+          <span class="header__line"></span>
+          <span class="header__line"></span>
+          <span class="header__line"></span>
+        </button>
         <a href="index.html" class="header__logo">
           <img src="./img/Logo.png" alt="Евклид - проектные системы" />
         </a>
@@ -51,7 +56,9 @@
     <main class="main">
       <section class="hero">
         <div class="container hero__container">
-          <div class="hero__img-block"><img src="./img/hero1.jpg" alt="Картинка" /></div>
+          <div class="hero__img-block">
+            <img src="./img/hero1.jpg" alt="Картинка" class="hero__img" />
+          </div>
           <div class="hero__info">
             <h1 class="hero__title">Проектные решения любой сложности</h1>
             <p class="hero__description">
@@ -59,6 +66,7 @@
               остаются уделом проектантов
             </p>
             <button class="btn hero__btn">Заказать расчёт</button>
+
             <ul class="hero__pagination-list">
               <li class="hero__pagination-item">
                 <a href="#" class="hero__pagination-link hero__pagination-link--active"></a>
@@ -69,7 +77,7 @@
           </div>
         </div>
       </section>
-      <section class="section about">
+      <!-- <section class="section about">
         <div class="container about__container">
           <h2 class="about__title title">О нас</h2>
           <p class="about__description">
@@ -159,8 +167,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="section faq">
+      </section> -->
+      <!-- <section class="section faq">
         <div class="container faq__container">
           <h2 class="title faq__title">Часто задаваемые вопросы</h2>
           <div class="faq__acardion">
@@ -299,9 +307,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__container">
         <div class="footer__menu">
           <a href="#" class="footer__logo">
@@ -424,6 +432,6 @@
           </p>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
