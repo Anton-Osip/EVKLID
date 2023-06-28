@@ -119,6 +119,20 @@ img {
   color: var(--grey33);
   font-size: 48px;
 }
+@media (max-width: 1224px) {
+  .section {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 524px) {
+  .section {
+    padding-top: 60px;
+  }
+  .title {
+    font-size: 24px;
+  }
+}
 
 /*<===HEADER START===> */
 
