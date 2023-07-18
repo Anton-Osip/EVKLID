@@ -410,6 +410,18 @@ img {
     margin-right: 5px;
   }
 }
+@media (max-width: 540px) {
+  .header__search-block {
+    display: none;
+  }
+  .header__burger {
+    position: absolute;
+    left: 15px;
+  }
+  .header__container {
+    justify-content: center;
+  }
+}
 
 /*<===HEADER END===> */
 
